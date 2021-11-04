@@ -16,6 +16,14 @@
     {
       title: "Zen",
       href: "zen"
+    },
+    {
+      title: "Dad Jokes",
+      href: "dadjokes"
+    },
+    {
+      title: "Blog",
+      href: "blog"
     }
   ];
 </script>

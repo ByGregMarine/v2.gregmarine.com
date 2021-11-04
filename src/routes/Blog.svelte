@@ -8,18 +8,18 @@
     pageTitle,
     collectionName,
     documentName,
-    zen,
+    blog,
   } from "../stores/stores.js";
 
-  pageTitle.set("Zen");
-  collectionName.set("zen");
+  pageTitle.set("Blog");
+  collectionName.set("blog");
   documentName.set("");
   
   export let id: string | null | undefined;
 
   let document = "";
   const getDocument = async () => {
-    const response = await fetch(`/collections/zen/${id}/document.md`);
+    const response = await fetch(`/collections/blog/${id}/document.md`);
     const data = await response.text();
     document = marked(xss(data));
   };
@@ -34,9 +34,9 @@
   let docLoaded = false;
 
   afterUpdate(() => {
-    if($zen.length > 0 && !docLoaded) {
+    if($blog.length > 0 && !docLoaded) {
       if (id) {
-        $zen.find(element => {
+        $blog.find(element => {
           if (element.id === id) {
             documentName.set(element.title);
             doc = element;
@@ -63,40 +63,36 @@
       class="w-full my-2 text-xl lg:text-2xl font-bold leading-tight text-center"
       in:fade
     >
-      Postive Motivation for a Troubled World
+      A Collection of My Musings
     </h2>
 
-    {#each $zen as doc}
+    {#each $blog as doc}
       <div class="flex md:w-1/2 lg:w-1/3 xl:w-1/4 p-2" in:fade>
-        <div class="card bordered shadow-lg image-full">
+        <div class="card bordered shadow-lg">
+          <figure class="m-0 px-10 pt-10">
+            <img class="object-cover h-96 md:h-48 w-full rounded-lg" alt={doc.title} src="/collections/blog/{doc.id}/image.webp" />
+          </figure>
           <div class="card-body">
             <h2 class="card-title">{doc.title}</h2>
-            <p>{doc.text}</p>
+            <p class="sm:text-sm md:text-xs">{doc.text}</p>
             <div class="card-actions">
-              <a class="btn btn-primary" href="/zen/{doc.id}" use:link>Read More</a>
+              <a class="btn btn-primary" href="/blog/{doc.id}" use:link>Read More</a>
             </div>
           </div>
-          <figure class="m-0">
-            <img alt={doc.title} src="/collections/zen/{doc.id}/image.webp" />
-          </figure>
         </div>
       </div>
     {/each}
   </div>
 {:else}
   {#if doc}
-    <div class="container mx-auto w-full flex flex-col items-center pt-4 pb-12" in:fade>
-      <div class="flex-1 card lg:card-side lg:h-64 md:w-2/3 xl:w-3/4">
-        <figure>
-          <img class="h-full" alt={doc.title} src="/collections/zen/{doc.id}/image.webp" />
-        </figure> 
-        <div class="card-body">
-          <p class="italic">{doc.text}</p>
+    <div class="w-full flex flex-col justify-center items-center pt-4">
+      <div class="flex flex-wrap w-full xl:w-1/2 md:w-4/6 sm:w-5/6" in:fade>
+        <p class="w-full p-6 space-y-6">
+          {doc.text}
+        </p>
+        <div class="w-full p-6 space-y-6">
+          {@html document}
         </div>
-      </div> 
-
-      <div class="flex-1 lg:h-64 md:w-2/3 xl:w-3/4 p-6 space-y-6">
-        {@html document}
       </div>
     </div>
   {/if}

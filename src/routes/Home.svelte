@@ -45,7 +45,7 @@
 <div class="divider">Ooohuuummm...</div>
 
 <!--Zen-->
-<section id="zen" class="py-8">
+<section id="zen" class="py-8" in:fade>
   <div class="container max-w-5xl mx-auto m-8">
     <a href="zen" class="w-full no-underline hover:no-underline" use:link>
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center">
@@ -65,7 +65,7 @@
       <div class="flex-col hero-content lg:flex-row-reverse">
         <img
           alt="Desktop Zen Garden with mini Torii Gate"
-          class="max-w-sm mask mask-hexagon-2"
+          class="max-w-sm mask mask-decagon"
           src="/collections/zen/image-01.webp"
         />
         <div>
@@ -109,7 +109,7 @@
 
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
       {#each $zen.slice(0, 3) as doc}
-        <div class="flex md:w-1/2 lg:w-1/3 p-2" in:fade|local>
+        <div class="flex md:w-1/2 lg:w-1/3 p-2">
           <div class="card bordered shadow-lg image-full">
             <div class="card-body">
               <h2 class="card-title">{doc.title}</h2>
@@ -130,7 +130,7 @@
         </div>
       {/each}
 
-      <div class="flex md:w-1/2 lg:w-1/3 p-2" in:fade|local>
+      <div class="flex md:w-1/2 lg:w-1/3 p-2">
         <a class="btn btn-primary" href="zen" use:link>
           More Zen
         </a>
@@ -140,3 +140,143 @@
 </section>
 
 <div class="divider">...but wait! There's more!</div> 
+
+<!--Dad Jokes-->
+<section id="dadjokes" class="py-8" in:fade>
+  <div class="container max-w-5xl mx-auto m-8">
+    <a href="/dadjokes" class="w-full no-underline hover:no-underline" use:link>
+      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center">
+        Dad Jokes
+      </h1>
+    </a>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t" />
+    </div>
+    <h2 class="w-full my-2 text-2xl font-bold leading-tight text-center">
+      Currated List of Eye Rolling Humor
+    </h2>
+
+    <div class="hero">
+      <div class="flex-col hero-content lg:flex-row-reverse">
+        <img
+          alt="Father and son holding hands looking at a sunset"
+          class="max-w-sm mask mask-hexagon-2"
+          src="/collections/dadjokes/image-01.webp"
+        />
+        <div>
+          <h3 class="mb-5 text-3xl font-bold">Like Father Like Son</h3>
+          <p class="mb-5">
+            I grew up hearing dad jokes all the time. And my father would tell
+            me some great ones! When I became a father, I carried on the
+            tradition of telling dad jokes to my son. In fact, that was my
+            motivation for being a father 😏
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="flex-col hero-content lg:flex-row">
+        <img
+          alt="My son, Malachi Marine"
+          class="max-w-sm mask mask-heart"
+          src="/collections/dadjokes/image-02.webp"
+        />
+        <div>
+          <h3 class="mb-5 text-3xl font-bold">Proud to be a Dad</h3>
+          <p class="mb-5">
+            In all seriousness, though, I am quite proud to be a dad and very
+            proud of the man my son is becoming. Now that he is rolling his
+            eyes at my jokes, I share them with the world!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t" />
+    </div>
+
+    <h2 class="w-full my-2 text-2xl font-bold leading-tight text-center">
+      The Latest Dad Jokes with Greg Marine
+    </h2>
+
+    <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+      {#each $dadjokes.slice(0, 3) as doc}
+        <div class="flex md:w-1/2 lg:w-1/3 p-2">
+          <div class="card bordered shadow-lg image-full">
+            <div class="card-body">
+              <h2 class="card-title">{doc.title}</h2>
+              <p class="w-full text-xl md:text-lg px-6 py-6">
+                {doc.setup}
+              </p>
+              <p class="w-full text-2xl md:text-lg px-6 py-6">
+                {doc.punchline}
+              </p>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="/dadjokes/{doc.id}" use:link
+                  >Watch Video</a
+                >
+              </div>
+            </div>
+            <figure class="m-0">
+              <img alt={doc.title} src="/collections/dadjokes/image-01.webp" />
+            </figure>
+          </div>
+        </div>
+      {/each}
+
+      <div class="flex md:w-1/2 lg:w-1/3 p-2">
+        <a class="btn btn-primary" href="/dadjokes" use:link>
+          More Eye Rolls
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">Still here? Enjoy reading?</div> 
+
+<!--Blog-->
+<section id="blog" class="py-8" in:fade>
+  <div class="container max-w-5xl mx-auto m-8">
+    <a href="/blog" class="w-full no-underline hover:no-underline" use:link>
+      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center">
+        Blog
+      </h1>
+    </a>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t" />
+    </div>
+    <h2 class="w-full my-2 text-2xl font-bold leading-tight text-center">
+      The Latest in the Collection of My Musings
+    </h2>
+
+    <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+      {#each $blog.slice(0, 3) as doc}
+        <div class="flex md:w-1/2 lg:w-1/3 p-2">
+          <div class="card bordered shadow-lg">
+            <figure class="m-0 px-10 pt-10">
+              <img class="object-cover h-96 md:h-48 w-full rounded-lg" alt={doc.title} src="/collections/blog/{doc.id}/image.webp" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">{doc.title}</h2>
+              <p class="sm:text-sm md:text-xs">{doc.text}</p>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="/blog/{doc.id}" use:link>Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {/each}
+
+      <div class="flex md:w-1/2 lg:w-1/3 p-2">
+        <a class="btn btn-primary" href="/blog" use:link>
+          More Musings
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">Before you leave 👇👇👇 😋 Some Yum!</div> 

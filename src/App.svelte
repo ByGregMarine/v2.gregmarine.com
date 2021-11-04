@@ -3,6 +3,9 @@
 	import { Router, Route } from "svelte-routing";
   import Home from "./routes/Home.svelte";
 	import Zen from "./routes/Zen.svelte";
+	import DadJokes from "./routes/DadJokes.svelte";
+	import Blog from "./routes/Blog.svelte";
+
   export let url = "";
 </script>
 
@@ -26,9 +29,29 @@
 			<Route path="zen/:id" let:params>
 				<Zen id="{params.id}" />
 			</Route>
-
-			<Route path="/zen">
+			<Route path="zen">
 				<Zen id="{null}" />
+			</Route>
+
+			<Route path="dadjokes/:id" let:params>
+				<DadJokes id="{params.id}" />
+			</Route>
+			<Route path="dadjokes">
+				<DadJokes id="{null}" />
+			</Route>
+
+			<Route path="blog/:id" let:params>
+				<Blog id="{params.id}" />
+			</Route>
+			<Route path="blog">
+				<Blog id="{null}" />
+			</Route>
+
+			<Route path="posts/:id" let:params>
+				<Blog id="{params.id}" />
+			</Route>
+			<Route path="posts">
+				<Blog id="{null}" />
 			</Route>
 
 			<Route path="/">
