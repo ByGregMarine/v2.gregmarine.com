@@ -1,11 +1,11 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "gregmarine-com",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public --no-clear --port 3000",
+    "start": "sirv public --no-clear -s --port 3000",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
@@ -13,6 +13,7 @@
     "@rollup/plugin-node-resolve": "^11.0.0",
     "@rollup/plugin-typescript": "^8.0.0",
     "@tsconfig/svelte": "^2.0.0",
+    "@types/marked": "^3.0.2",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.3.11",
     "postcss-load-config": "^3.1.0",
@@ -30,7 +31,9 @@
   },
   "dependencies": {
     "daisyui": "^1.16.1",
+    "marked": "^4.0.0",
     "sirv-cli": "^1.0.0",
-    "svelte-routing": "^1.6.0"
+    "svelte-routing": "^1.6.0",
+    "xss": "^1.0.10"
   }
 }
