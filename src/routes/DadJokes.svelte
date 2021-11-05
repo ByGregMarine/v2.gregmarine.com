@@ -1,7 +1,7 @@
 <script lang="ts">
   import { afterUpdate } from 'svelte';
   import { fade } from "svelte/transition";
-  import { link } from "svelte-routing";
+  import { link, navigate } from "svelte-routing";
   import {
     pageTitle,
     collectionName,
@@ -36,6 +36,10 @@
             return true;
           }
         });
+
+        if (!doc) {
+          navigate("404");
+        }
       } else {
         documentName.set("");
         doc = null;

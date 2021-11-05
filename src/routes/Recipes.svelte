@@ -1,7 +1,7 @@
 <script lang="ts">
   import { afterUpdate, beforeUpdate } from 'svelte';
   import { fade } from "svelte/transition";
-  import { link } from "svelte-routing";
+  import { link, navigate } from "svelte-routing";
   import xss from "xss";
   import { Marked } from '@ts-stack/markdown';
   import {
@@ -21,8 +21,12 @@
   let document = "";
   const getDocument = async () => {
     const response = await fetch(`/collections/recipes/${id}/${tab}.md`);
-    const data = await response.text();
-    document = Marked.parse(xss(data));
+    if (response.status === 404) {
+      navigate("404");
+    } else {
+      const data = await response.text();
+      document = Marked.parse(xss(data));
+    }
   };
 
   type Doc = {

@@ -1,11 +1,12 @@
 <script lang="ts">
 	import Navbar from "./components/Navbar.svelte";
 	import { Router, Route } from "svelte-routing";
-  import Home from "./routes/Home.svelte";
 	import Zen from "./routes/Zen.svelte";
 	import DadJokes from "./routes/DadJokes.svelte";
 	import Blog from "./routes/Blog.svelte";
 	import Recipes from "./routes/Recipes.svelte";
+  import Home from "./routes/Home.svelte";
+	import NotFound from "./routes/NotFound.svelte";
 
   export let url = "";
 </script>
@@ -47,7 +48,6 @@
 			<Route path="blog">
 				<Blog id="{null}" />
 			</Route>
-
 			<Route path="posts/:id" let:params>
 				<Blog id="{params.id}" />
 			</Route>
@@ -67,6 +67,10 @@
 
 			<Route path="/">
 				<Home />
+			</Route>
+
+			<Route>
+				<NotFound />
 			</Route>
 
 		</Router>
