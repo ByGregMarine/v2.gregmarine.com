@@ -1,6 +1,6 @@
 # Christianity 101
 
-In my article _[When to Give Up](/#/blog/when-to-give-up)_, I mentioned I was raised in the church. Among other things, I was taught it was important to pray to God concerning everything and meditate on the scriptures from the Christian Holy Bible. Prayer and meditation is a very personal experience that exists in several religions. And for very good reason. In most cases, these exercises will allow you to relax, recharge, and refocus on what matters most.
+In my article _[When to Give Up](blog/when-to-give-up)_, I mentioned I was raised in the church. Among other things, I was taught it was important to pray to God concerning everything and meditate on the scriptures from the Christian Holy Bible. Prayer and meditation is a very personal experience that exists in several religions. And for very good reason. In most cases, these exercises will allow you to relax, recharge, and refocus on what matters most.
 
 In the case of Christianity, prayer is a communication channel to the Creator of all things. Growing up I believed that this dialog would include God answering my prayers in a way that would make sense to me. As I became a teenaged boy, I quickly realized this was not the case. Most of the time, what I thought were answers from God would not make much sense at all. But I would always try to accept whatever form the answer would come in.
 
