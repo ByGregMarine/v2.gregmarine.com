@@ -2,8 +2,6 @@
   import { afterUpdate } from 'svelte';
   import { fade } from "svelte/transition";
   import { link } from "svelte-routing";
-  import xss from "xss";
-  import { marked } from "marked";
   import {
     pageTitle,
     collectionName,
@@ -16,13 +14,6 @@
   documentName.set("");
   
   export let id: string | null | undefined;
-
-  let document = "";
-  const getDocument = async () => {
-    const response = await fetch(`/collections/dadjokes/${id}/document.md`);
-    const data = await response.text();
-    document = marked(xss(data));
-  };
 
   type Doc = {
     id: string;
@@ -45,8 +36,6 @@
             return true;
           }
         });
-
-        getDocument();
       } else {
         documentName.set("");
         doc = null;

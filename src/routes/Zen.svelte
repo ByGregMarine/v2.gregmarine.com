@@ -3,7 +3,7 @@
   import { fade } from "svelte/transition";
   import { link } from "svelte-routing";
   import xss from "xss";
-  import { marked } from "marked";
+  import { Marked } from '@ts-stack/markdown';
   import {
     pageTitle,
     collectionName,
@@ -21,7 +21,7 @@
   const getDocument = async () => {
     const response = await fetch(`/collections/zen/${id}/document.md`);
     const data = await response.text();
-    document = marked(xss(data));
+    document = Marked.parse(xss(data));
   };
 
   type Doc = {
