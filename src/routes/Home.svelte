@@ -280,3 +280,45 @@
 </section>
 
 <div class="divider">Before you leave 👇👇👇 😋 Some Yum!</div> 
+
+<!--Recipes-->
+<section id="recipes" class="py-8" in:fade>
+  <div class="container max-w-5xl mx-auto m-8">
+    <a href="/recipes" class="w-full no-underline hover:no-underline" use:link>
+      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center">
+        Recipes
+      </h1>
+    </a>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t" />
+    </div>
+    <h2 class="w-full my-2 text-2xl font-bold leading-tight text-center">
+      Food I Love to Make
+    </h2>
+
+    <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+      {#each $recipes.slice(0, 3) as doc}
+        <div class="flex md:w-1/2 lg:w-1/3 p-2">
+          <div class="card bordered shadow-lg">
+            <figure class="m-0 px-10 pt-10">
+              <img class="object-cover h-96 md:h-48 w-full rounded-lg" alt={doc.title} src="/collections/recipes/{doc.id}/image.webp" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">{doc.title}</h2>
+              <p class="sm:text-sm md:text-xs">{doc.text}</p>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="/recipes/{doc.id}" use:link>Show Recipe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {/each}
+
+      <div class="flex md:w-1/2 lg:w-1/3 p-2">
+        <a class="btn btn-primary" href="/recipes" use:link>
+          More Yum
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

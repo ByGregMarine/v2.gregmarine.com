@@ -24,6 +24,10 @@
     {
       title: "Blog",
       href: "blog"
+    },
+    {
+      title: "Recipes",
+      href: "recipes"
     }
   ];
 </script>

@@ -5,6 +5,7 @@
 	import Zen from "./routes/Zen.svelte";
 	import DadJokes from "./routes/DadJokes.svelte";
 	import Blog from "./routes/Blog.svelte";
+	import Recipes from "./routes/Recipes.svelte";
 
   export let url = "";
 </script>
@@ -52,6 +53,16 @@
 			</Route>
 			<Route path="posts">
 				<Blog id="{null}" />
+			</Route>
+
+			<Route path="recipes/:id" let:params>
+				<Recipes id="{params.id}" tab="overview" />
+			</Route>
+			<Route path="recipes/:id/:tab" let:params>
+				<Recipes id="{params.id}" tab="{params.tab}" />
+			</Route>
+			<Route path="recipes">
+				<Recipes id="{null}" tab="{null}" />
 			</Route>
 
 			<Route path="/">
