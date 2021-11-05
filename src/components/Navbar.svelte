@@ -3,6 +3,14 @@
 
   import { pageTitle, collectionName, documentName } from "../stores/stores.js";
 
+  const close = () => {
+    if($collectionName !== "") {
+      navigate($collectionName);
+    } else {
+      navigate("/");
+    }
+  };
+
   type MenuItem = {
     title: string;
     href: string;
@@ -38,7 +46,7 @@
       <ion-title>{$documentName}</ion-title>
 
       <ion-buttons slot="end">
-        <ion-button on:click={() => window.history.back()}>
+        <ion-button on:click={close}>
           <ion-icon name="close"></ion-icon>
         </ion-button>
       </ion-buttons>
