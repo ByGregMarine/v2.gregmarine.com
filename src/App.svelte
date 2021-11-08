@@ -1,4 +1,5 @@
-<script lang="ts">
+<script>
+	import { onMount } from "svelte";
 	import Navbar from "./components/Navbar.svelte";
 	import { Router, Route } from "svelte-routing";
 	import Zen from "./routes/Zen.svelte";
@@ -8,7 +9,20 @@
   import Home from "./routes/Home.svelte";
 	import NotFound from "./routes/NotFound.svelte";
 
+	import { scroll } from "./stores/stores.js";
+
   export let url = "";
+
+	const saveScrollPosition = (ev) => {
+		$scroll.currentTop = ev.detail.scrollTop;
+	};
+
+	onMount(() => {
+		const content = document.querySelector('ion-content');
+		content.scrollEvents = true;
+
+		content.addEventListener('ionScroll', saveScrollPosition);
+	});	
 </script>
 
 <style global lang="postcss">
@@ -35,10 +49,10 @@
 				<Zen id="{null}" />
 			</Route>
 
-			<Route path="dadjokes/:id" let:params>
+			<Route path="dad-jokes/:id" let:params>
 				<DadJokes id="{params.id}" />
 			</Route>
-			<Route path="dadjokes">
+			<Route path="dad-jokes">
 				<DadJokes id="{null}" />
 			</Route>
 

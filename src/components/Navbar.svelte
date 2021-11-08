@@ -1,11 +1,10 @@
 <script lang="ts">
   import { navigate } from "svelte-routing";
-
-  import { pageTitle, collectionName, documentName } from "../stores/stores.js";
+  import { title, collection, document } from "../stores/PageStore";
 
   const close = () => {
-    if($collectionName !== "") {
-      navigate($collectionName);
+    if($collection !== "") {
+      navigate($collection.toLowerCase().replaceAll(" ", "-"));
     } else {
       navigate("/");
     }
@@ -27,7 +26,7 @@
     },
     {
       title: "Dad Jokes",
-      href: "dadjokes"
+      href: "dad-jokes"
     },
     {
       title: "Blog",
@@ -42,8 +41,10 @@
 
 <ion-header>
   <ion-toolbar>
-    {#if $documentName !== ""}
-      <ion-title>{$documentName}</ion-title>
+    {#if $document !== ""}
+      <ion-title>
+        {$title}
+      </ion-title>
 
       <ion-buttons slot="end">
         <ion-button on:click={close}>
@@ -52,7 +53,7 @@
       </ion-buttons>
     {:else}
       <ion-title>
-        {$pageTitle}
+        {$title}
       </ion-title>
 
       <ion-buttons slot="end">

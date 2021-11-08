@@ -4,6 +4,13 @@ export const pageTitle = writable('Home');
 export const collectionName = writable('');
 export const documentName = writable('');
 
+export const scroll = writable({
+  previousTop: 0,
+  previousPath: '',
+  currentTop: 0,
+  currentPath: '',
+});
+
 const fetchIndex = async (collection) => {
   const response = await fetch(`collections/${collection}/index.json`);
   const data = await response.json();
@@ -16,7 +23,7 @@ export const zen = readable([], function (set) {
 });
 
 export const dadjokes = readable([], function (set) {
-  fetchIndex('dadjokes').then((data) => set(data));
+  fetchIndex('dad-jokes').then((data) => set(data));
   return () => {};
 });
 

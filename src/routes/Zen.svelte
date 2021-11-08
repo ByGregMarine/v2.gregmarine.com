@@ -5,26 +5,44 @@
   import xss from "xss";
   import { Marked } from '@ts-stack/markdown';
   import {
-    pageTitle,
-    collectionName,
-    documentName,
+    scroll,
     zen,
   } from "../stores/stores.js";
 
-  pageTitle.set("Zen");
-  collectionName.set("zen");
-  documentName.set("");
-  
+  import { collection, document } from "../stores/PageStore";
+
   export let id: string | null | undefined;
 
-  let document = "";
-  const getDocument = async () => {
+  collection.set("Zen");
+  document.set("");
+
+  const updateScroll = () => {
+    const content = window.document.querySelector('ion-content');
+    
+    if(window.location.pathname === $scroll.previousPath) {
+      if(content) {
+        content.scrollToPoint(0, $scroll.previousTop);
+      }
+    } else {
+      if(content) {
+        content.scrollToTop();
+      }
+    }
+
+    $scroll.previousTop = $scroll.currentTop;
+    $scroll.previousPath = $scroll.currentPath;
+    $scroll.currentPath = window.location.pathname;
+  }
+  
+  let docMD = "";
+  const getDocMD = async () => {
     const response = await fetch(`/collections/zen/${id}/document.md`);
     if (response.status === 404) {
       navigate("404");
     } else {
       const data = await response.text();
-      document = Marked.parse(xss(data));
+      docMD = Marked.parse(xss(data));
+      updateScroll();
     }
   };
 
@@ -42,16 +60,18 @@
       if (id) {
         $zen.find(element => {
           if (element.id === id) {
-            documentName.set(element.title);
+            document.set(element.title);
             doc = element;
             return true;
           }
         });
 
-        getDocument();
+        getDocMD();
       } else {
-        documentName.set("");
+        document.set("");
         doc = null;
+
+        updateScroll();
       }
       docLoaded = true;
     }
@@ -100,7 +120,7 @@
       </div> 
 
       <div class="flex-1 lg:h-64 md:w-2/3 xl:w-3/4 p-6 space-y-6">
-        {@html document}
+        {@html docMD}
       </div>
     </div>
   {/if}

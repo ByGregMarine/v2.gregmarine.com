@@ -5,26 +5,24 @@
   import xss from "xss";
   import { Marked } from '@ts-stack/markdown';
   import {
-    pageTitle,
-    collectionName,
-    documentName,
     blog,
   } from "../stores/stores.js";
 
-  pageTitle.set("Blog");
-  collectionName.set("blog");
-  documentName.set("");
-  
+  import { collection, document } from "../stores/PageStore";
+
   export let id: string | null | undefined;
 
-  let document = "";
+  collection.set("Blog");
+  document.set("");
+  
+  let docMD = "";
   const getDocument = async () => {
     const response = await fetch(`/collections/blog/${id}/document.md`);
     if (response.status === 404) {
       navigate("404");
     } else {
       const data = await response.text();
-      document = Marked.parse(xss(data));
+      docMD = Marked.parse(xss(data));
     }
   };
 
@@ -42,7 +40,7 @@
       if (id) {
         $blog.find(element => {
           if (element.id === id) {
-            documentName.set(element.title);
+            document.set(element.title);
             doc = element;
             return true;
           }
@@ -50,7 +48,7 @@
 
         getDocument();
       } else {
-        documentName.set("");
+        document.set("");
         doc = null;
       }
       docLoaded = true;
@@ -95,7 +93,7 @@
           {doc.text}
         </p>
         <div class="w-full p-6 space-y-6">
-          {@html document}
+          {@html docMD}
         </div>
       </div>
     </div>

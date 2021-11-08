@@ -5,27 +5,25 @@
   import xss from "xss";
   import { Marked } from '@ts-stack/markdown';
   import {
-    pageTitle,
-    collectionName,
-    documentName,
     recipes,
   } from "../stores/stores.js";
 
-  pageTitle.set("Recipes");
-  collectionName.set("recipes");
-  documentName.set("");
-  
   export let id: string | null | undefined;
   export let tab: string | null | undefined;
 
-  let document = "";
+  import { collection, document } from "../stores/PageStore";
+
+  collection.set("Recipes");
+  document.set("");
+  
+  let docMD = "";
   const getDocument = async () => {
     const response = await fetch(`/collections/recipes/${id}/${tab}.md`);
     if (response.status === 404) {
       navigate("404");
     } else {
       const data = await response.text();
-      document = Marked.parse(xss(data));
+      docMD = Marked.parse(xss(data));
     }
   };
 
@@ -43,7 +41,7 @@
       if (id) {
         $recipes.find(element => {
           if (element.id === id) {
-            documentName.set(element.title);
+            document.set(element.title);
             doc = element;
             return true;
           }
@@ -53,7 +51,7 @@
           getDocument();
         }
       } else {
-        documentName.set("");
+        document.set("");
         doc = null;
       }
       docLoaded = true;
@@ -145,7 +143,7 @@
           </div>
         {:else}
           <div class="w-full p-6 space-y-6">
-            {@html document}
+            {@html docMD}
           </div>
         {/if}
       </div>

@@ -3,17 +3,15 @@
   import { fade } from "svelte/transition";
   import { link, navigate } from "svelte-routing";
   import {
-    pageTitle,
-    collectionName,
-    documentName,
     dadjokes,
   } from "../stores/stores.js";
 
-  pageTitle.set("Dad Jokes");
-  collectionName.set("dadjokes");
-  documentName.set("");
-  
+  import { collection, document } from "../stores/PageStore";
+
   export let id: string | null | undefined;
+
+  collection.set("Dad Jokes");
+  document.set("");
 
   type Doc = {
     id: string;
@@ -31,7 +29,7 @@
       if (id) {
         $dadjokes.find(element => {
           if (element.id === id) {
-            documentName.set(element.title);
+            document.set(element.title);
             doc = element;
             return true;
           }
@@ -41,7 +39,7 @@
           navigate("404");
         }
       } else {
-        documentName.set("");
+        document.set("");
         doc = null;
       }
       docLoaded = true;
@@ -73,11 +71,11 @@
               {doc.punchline}
             </p>
             <div class="card-actions">
-              <a class="btn btn-primary" href="/dadjokes/{doc.id}" use:link>Watch Video</a>
+              <a class="btn btn-primary" href="/dad-jokes/{doc.id}" use:link>Watch Video</a>
             </div>
           </div>
           <figure class="m-0">
-            <img alt={doc.title} src="/collections/dadjokes/image-01.webp" />
+            <img alt={doc.title} src="/collections/dad-jokes/image-01.webp" />
           </figure>
         </div>
       </div>

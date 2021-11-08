@@ -2,21 +2,18 @@
   import { fade } from "svelte/transition";
   import { link } from "svelte-routing";
   import {
-    pageTitle,
-    collectionName,
-    documentName,
     zen,
     dadjokes,
     blog,
     recipes,
   } from "../stores/stores.js";
+  import { collection, document } from "../stores/PageStore";
 
-  pageTitle.set("");
-  collectionName.set("");
-  documentName.set("");
+  collection.set("");
+  document.set("");
 
   const scrollTo = (id: string) => {
-    const element = document.getElementById(id);
+    const element = window.document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth" });
   };
 </script>
@@ -142,9 +139,9 @@
 <div class="divider">...but wait! There's more!</div> 
 
 <!--Dad Jokes-->
-<section id="dadjokes" class="py-8" in:fade>
+<section id="dad-jokes" class="py-8" in:fade>
   <div class="container max-w-5xl mx-auto m-8">
-    <a href="/dadjokes" class="w-full no-underline hover:no-underline" use:link>
+    <a href="/dad-jokes" class="w-full no-underline hover:no-underline" use:link>
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center">
         Dad Jokes
       </h1>
@@ -161,7 +158,7 @@
         <img
           alt="Father and son holding hands looking at a sunset"
           class="max-w-sm mask mask-hexagon-2"
-          src="/collections/dadjokes/image-01.webp"
+          src="/collections/dad-jokes/image-01.webp"
         />
         <div>
           <h3 class="mb-5 text-3xl font-bold">Like Father Like Son</h3>
@@ -180,7 +177,7 @@
         <img
           alt="My son, Malachi Marine"
           class="max-w-sm mask mask-heart"
-          src="/collections/dadjokes/image-02.webp"
+          src="/collections/dad-jokes/image-02.webp"
         />
         <div>
           <h3 class="mb-5 text-3xl font-bold">Proud to be a Dad</h3>
@@ -214,20 +211,20 @@
                 {doc.punchline}
               </p>
               <div class="card-actions">
-                <a class="btn btn-primary" href="/dadjokes/{doc.id}" use:link
+                <a class="btn btn-primary" href="/dad-jokes/{doc.id}" use:link
                   >Watch Video</a
                 >
               </div>
             </div>
             <figure class="m-0">
-              <img alt={doc.title} src="/collections/dadjokes/image-01.webp" />
+              <img alt={doc.title} src="/collections/dad-jokes/image-01.webp" />
             </figure>
           </div>
         </div>
       {/each}
 
       <div class="flex md:w-1/2 lg:w-1/3 p-2">
-        <a class="btn btn-primary" href="/dadjokes" use:link>
+        <a class="btn btn-primary" href="/dad-jokes" use:link>
           More Eye Rolls
         </a>
       </div>
