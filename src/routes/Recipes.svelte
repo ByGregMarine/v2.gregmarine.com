@@ -4,14 +4,11 @@
   import { link, navigate } from "svelte-routing";
   import xss from "xss";
   import { Marked } from '@ts-stack/markdown';
-  import {
-    recipes,
-  } from "../stores/stores.js";
+  import { recipes } from "../stores/IndexStore";
+  import { collection, document } from "../stores/PageStore";
 
   export let id: string | null | undefined;
   export let tab: string | null | undefined;
-
-  import { collection, document } from "../stores/PageStore";
 
   collection.set("Recipes");
   document.set("");

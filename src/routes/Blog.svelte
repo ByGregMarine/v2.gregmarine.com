@@ -4,10 +4,7 @@
   import { link, navigate } from "svelte-routing";
   import xss from "xss";
   import { Marked } from '@ts-stack/markdown';
-  import {
-    blog,
-  } from "../stores/stores.js";
-
+  import { blog } from "../stores/IndexStore";
   import { collection, document } from "../stores/PageStore";
 
   export let id: string | null | undefined;

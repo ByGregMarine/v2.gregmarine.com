@@ -6,9 +6,8 @@
   import { Marked } from '@ts-stack/markdown';
   import {
     scroll,
-    zen,
   } from "../stores/stores.js";
-
+  import { zen } from "../stores/IndexStore";
   import { collection, document } from "../stores/PageStore";
 
   export let id: string | null | undefined;

@@ -2,10 +2,7 @@
   import { afterUpdate } from 'svelte';
   import { fade } from "svelte/transition";
   import { link, navigate } from "svelte-routing";
-  import {
-    dadjokes,
-  } from "../stores/stores.js";
-
+  import { dadJokes } from "../stores/IndexStore";
   import { collection, document } from "../stores/PageStore";
 
   export let id: string | null | undefined;
@@ -25,9 +22,9 @@
   let docLoaded = false;
 
   afterUpdate(() => {
-    if($dadjokes.length > 0 && !docLoaded) {
+    if($dadJokes.length > 0 && !docLoaded) {
       if (id) {
-        $dadjokes.find(element => {
+        $dadJokes.find(element => {
           if (element.id === id) {
             document.set(element.title);
             doc = element;
@@ -59,7 +56,7 @@
       Currated List of Eye Rolling Humor
     </h2>
 
-    {#each $dadjokes as doc}
+    {#each $dadJokes as doc}
       <div class="flex md:w-1/2 lg:w-1/3 xl:w-1/4 p-2" in:fade>
         <div class="card bordered shadow-lg image-full">
           <div class="card-body">

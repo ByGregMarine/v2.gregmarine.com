@@ -3,10 +3,10 @@
   import { link } from "svelte-routing";
   import {
     zen,
-    dadjokes,
+    dadJokes,
     blog,
     recipes,
-  } from "../stores/stores.js";
+  } from "../stores/IndexStore";
   import { collection, document } from "../stores/PageStore";
 
   collection.set("");
@@ -199,7 +199,7 @@
     </h2>
 
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-      {#each $dadjokes.slice(0, 3) as doc}
+      {#each $dadJokes.slice(0, 3) as doc}
         <div class="flex md:w-1/2 lg:w-1/3 p-2">
           <div class="card bordered shadow-lg image-full">
             <div class="card-body">
