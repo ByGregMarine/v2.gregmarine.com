@@ -1,14 +1,9 @@
 <script lang="ts">
   import { fade } from "svelte/transition";
-  import {
-    pageTitle,
-    collectionName,
-    documentName,
-  } from "../stores/stores.js";
+  import { collection, document } from "../stores/PageStore";
 
-  pageTitle.set("Not Found");
-  collectionName.set("");
-  documentName.set("");
+  collection.set("Not Found");
+  document.set("");
 </script>
 
 <div class="container mx-auto flex flex-wrap pt-4 pb-12" in:fade>
