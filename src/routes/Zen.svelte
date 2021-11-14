@@ -20,11 +20,11 @@
     
     if(window.location.pathname === $scroll.previousPath) {
       if(content) {
-        content.scrollToPoint(0, $scroll.previousTop);
+        //content.scrollToPoint(0, $scroll.previousTop);
       }
     } else {
       if(content) {
-        content.scrollToTop();
+        //content.scrollToTop();
       }
     }
 

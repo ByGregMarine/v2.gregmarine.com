@@ -1,6 +1,6 @@
-<script>
-	import { onMount } from "svelte";
+<script lang="ts">
 	import Navbar from "./components/Navbar.svelte";
+	import Content from "./components/Content.svelte";
 	import { Router, Route } from "svelte-routing";
 	import Zen from "./routes/Zen.svelte";
 	import DadJokes from "./routes/DadJokes.svelte";
@@ -9,20 +9,7 @@
   import Home from "./routes/Home.svelte";
 	import NotFound from "./routes/NotFound.svelte";
 
-	import { scroll } from "./stores/stores.js";
-
   export let url = "";
-
-	const saveScrollPosition = (ev) => {
-		$scroll.currentTop = ev.detail.scrollTop;
-	};
-
-	onMount(() => {
-		const content = document.querySelector('ion-content');
-		content.scrollEvents = true;
-
-		content.addEventListener('ionScroll', saveScrollPosition);
-	});	
 </script>
 
 <style global lang="postcss">
@@ -38,7 +25,7 @@
 <ion-app>
 	<Navbar />
 
-	<ion-content>
+	<Content>
 
 		<Router url="{url}">
 			
@@ -89,5 +76,5 @@
 
 		</Router>
 
-	</ion-content>
+	</Content>
 </ion-app>
