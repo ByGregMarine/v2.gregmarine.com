@@ -1,195 +1,263 @@
 [
   {
-    "id" : "2021-11-09",
+    "id": "take-the-car",
+    "published" : "2021-11-19",
+    "title": "Take the car",
+    "youtube": "2hIsLlj_55I",
+    "setup": "My son asked me if we could run to the store.",
+    "punchline": "I told him it would be best to take the car!"
+  },
+  {
+    "id": "picking-your-nose",
+    "published" : "2021-11-18",
+    "title": "Picking Your Nose",
+    "youtube": "1trhmbAb3PE",
+    "setup": "You know, they say people pick their noses.",
+    "punchline": "Honestly, I feel like I was born with mine!"
+  },
+  {
+    "id": "no-punchline",
+    "published" : "2021-11-17",
+    "title": "No Punchline",
+    "youtube": "mRWDtHOcQY8",
+    "setup": "Have you heard the joke without a punchline?!",
+    "punchline": ""
+  },
+  {
+    "id": "sushi",
+    "published" : "2021-11-16",
+    "title": "Sushi",
+    "youtube": "h_ILAHyDNuE",
+    "setup": "Sushi?!?",
+    "punchline": "It seems a little fishy to me!"
+  },
+  {
+    "id": "shoes-wont-fit",
+    "published" : "2021-11-15",
+    "title": "Shoes Won't Fit",
+    "youtube": "dPsyD_AIFBI",
+    "setup": "So my son says, 'Can you put my shoes on?'",
+    "punchline": "No son, I don't think they'll fit me!"
+  },
+  {
+    "id": "sundae-school",
+    "published" : "2021-11-09",
     "title": "Sundae School",
     "youtube": "fiD-WIJJCv4",
     "setup": "Where can you get a degree in ice cream making?",
     "punchline": "In sundae school!"
   },
   {
-    "id" : "2021-11-08",
+    "id": "crowded-cemeteries",
+    "published" : "2021-11-08",
     "title": "Crowded Cemeteries",
     "youtube": "5OgMbirHEZM",
     "setup": "Why are cemeteries so crowded?!",
     "punchline": "Folks are dying to get in!!!"
   },
   {
-    "id" : "2021-11-04",
+    "id": "put-the-dog-out",
+    "published" : "2021-11-04",
     "title": "Put the dog out",
     "youtube": "0dNV3WWUvNk",
     "setup": "So my son says, can you put the dog out?",
     "punchline": "I didn't know she was on fire!!!"
   },
   {
-    "id" : "2021-11-03",
+    "id": "fungi",
+    "published" : "2021-11-03",
     "title": "Fungi",
     "youtube": "v69IiWF6Ewc",
     "setup": "What did the mushroom say on his date?",
     "punchline": "I'm a real...fungi!"
   },
   {
-    "id" : "2021-11-02",
+    "id": "darth-bagel",
+    "published" : "2021-11-02",
     "title": "Darth Bagel",
     "youtube": "DGyv_tkHggM",
     "setup": "How does Darth Vader like his bagel toasted?",
     "punchline": "On the...dark side!"
   },
   {
-    "id" : "2021-11-01",
+    "id": "on-a-roll",
+    "published" : "2021-11-01",
     "title": "On a Roll",
     "youtube": "dKhBQhsQLgI",
     "setup": "My son keeps telling me to stop pretending to be butter.",
     "punchline": "Yet, I'm on a roll now!"
   },
   {
-    "id" : "2021-10-27",
+    "id": "pointless",
+    "published" : "2021-10-27",
     "title": "Pointless",
     "youtube": "F86_0sCfphE",
     "setup": "Without geometry, life is...",
     "punchline": "POINTLESS!!!"
   },
   {
-    "id" : "2021-10-26",
+    "id": "sick-tiger",
+    "published" : "2021-10-26",
     "title": "Sick Tiger",
     "youtube": "QC6y8ws9gZM",
     "setup": "What did the vet say about the sick tiger?",
     "punchline": "I don't think she's FELINE well!"
   },
   {
-    "id" : "2021-10-25",
+    "id": "deaf-defying",
+    "published" : "2021-10-25",
     "title": "Deaf Defying",
     "youtube": "H5yDfO5L1nY",
     "setup": "What do you call an old person with really good hearing?",
     "punchline": "Deaf...Defying!!!"
   },
   {
-    "id" : "2021-10-21",
+    "id": "no-eyes-fish",
+    "published" : "2021-10-21",
     "title": "No Eyes Fish",
     "youtube": "67jaxQ-wAkA",
     "setup": "What do you call a fish with no eyes?!",
     "punchline": "A FSHHH!!!"
   },
   {
-    "id" : "2021-10-20",
+    "id": "nobody-nose",
+    "published" : "2021-10-20",
     "title": "Nobody Nose",
     "youtube": "WP9XvXvsgQs",
     "setup": "What do you call a man with a nose but no body?!",
     "punchline": "Nobody nose!!!"
   },
   {
-    "id" : "2021-10-19",
+    "id": "vacuuming",
+    "published" : "2021-10-19",
     "title": "Vacuuming",
     "youtube": "1xGsaDZtMXM",
     "setup": "You know what really sucks?!",
     "punchline": "Vacuuming!!!"
   },
   {
-    "id" : "2021-10-18",
+    "id": "velcro",
+    "published" : "2021-10-18",
     "title": "Velcro",
     "youtube": "sMeQO_rzjT4",
     "setup": "Velcro...",
     "punchline": "...What a rip off!!!"
   },
   {
-    "id" : "2021-10-15",
+    "id": "shellfish-lobsters",
+    "published" : "2021-10-15",
     "title": "Shellfish Lobsters",
     "youtube": "TI0RmNHuJQM",
     "setup": "Why do lobsters never give to charity?!",
     "punchline": "Because they're...SHELLFISH!!!"
   },
   {
-    "id" : "2021-10-14",
+    "id": "oceans-wave",
+    "published" : "2021-10-14",
     "title": "Oceans Wave",
     "youtube": "c_UqVD5HEqQ",
     "setup": "What did the ocean say to the beach?",
     "punchline": "Nothing...it just waved!!!"
   },
   {
-    "id" : "2021-10-13",
+    "id": "motorbike-two-tired",
+    "published" : "2021-10-13",
     "title": "Motorbike Two Tired",
     "youtube": "JHImTbE9gyw",
     "setup": "Why couldn't the motorbike stand on its own?",
     "punchline": "Because it was...two tired!!!"
   },
   {
-    "id" : "2021-10-12",
+    "id": "nacho-cheese",
+    "published" : "2021-10-12",
     "title": "Nacho Cheese",
     "youtube": "Pz5_rq802vo",
     "setup": "What do you call cheese that isn't yours?!",
     "punchline": "It's Nacho Cheese!!!"
   },
   {
-    "id" : "2021-10-11",
+    "id": "calendar-thief",
+    "published" : "2021-10-11",
     "title": "Calendar Thief",
     "youtube": "XVxBCMOkxGM",
     "setup": "Did you hear about the dude who stole the calendar?",
     "punchline": "Yeah, he got 12 months..."
   },
   {
-    "id" : "2021-10-08",
+    "id": "jumper-cables",
+    "published" : "2021-10-08",
     "title": "Jumper Cables",
     "youtube": "zQubHEmh7b4",
     "setup": "A pair of jumper cables walks into a bar...",
     "punchline": "The waitress says, \"I'll serve you. Just don't start anything!!!\""
   },
   {
-    "id" : "2021-10-07",
+    "id": "cat-burglar-footwear",
+    "published" : "2021-10-07",
     "title": "Cat Burglar Footwear",
     "youtube": "xRHznxVOxH0",
     "setup": "What kind of shoes does a cat burglar wear???",
     "punchline": "SNEAKERS!!!"
   },
   {
-    "id" : "2021-10-06",
+    "id": "belt-watch",
+    "published" : "2021-10-06",
     "title": "Belt Watch",
     "youtube": "fJI4FzDdvXk",
     "setup": "What do you call a belt with a watch on it!",
     "punchline": "A WAIST of TIME!!!"
   },
   {
-    "id" : "2021-10-05",
+    "id": "newspaper",
+    "published" : "2021-10-05",
     "title": "Newspaper",
     "youtube": "Rg8OrNku7qg",
     "setup": "What is black and white and red all over?!",
     "punchline": "A Newspaper!!!"
   },
   {
-    "id" : "2021-10-04",
+    "id": "daddy-flower",
+    "published" : "2021-10-04",
     "title": "Daddy Flower",
     "youtube": "9WrPDpYwZOE",
     "setup": "How does a daddy flower greet his baby?",
     "punchline": "Hey Bud!"
   },
   {
-    "id" : "2021-10-01",
+    "id": "elsas-balloon",
+    "published" : "2021-10-01",
     "title": "Elsa's Balloon",
     "youtube": "-O1nG8Mpzlk",
     "setup": "Why can't Elsa have a balloon?",
     "punchline": "Because she'll just Let It Go!!!"
   },
   {
-    "id" : "2021-09-30",
+    "id": "world-series-bat",
+    "published" : "2021-09-30",
     "title": "World Series Bat",
     "youtube": "7oQEN6xtj30",
     "setup": "What kind of animal is always at the World Series?",
     "punchline": "A BAT!!!"
   },
   {
-    "id" : "2021-09-29",
+    "id": "where-lost-things-are-found",
+    "published" : "2021-09-29",
     "title": "Where Lost Things are Found",
     "youtube": "5w9J28XRfcY",
     "setup": "Where can you always find the thing you lost?",
     "punchline": "In the last place you look!!!"
   },
   {
-    "id" : "2021-09-28",
+    "id": "toilet-paper-stuck",
+    "published" : "2021-09-28",
     "title": "Toilet Paper Stuck",
     "youtube": "_-7VRlhu7Ww",
     "setup": "Why couldn't the toilet paper cross the road?",
     "punchline": "It got stuck...in a CRACK!!!"
   },
   {
-    "id" : "2021-09-27",
+    "id": "picture-prison-framed",
+    "published" : "2021-09-27",
     "title": "Picture Prison Framed",
     "youtube": "pqXwGMnmdV4",
     "setup": "Why was the picture sent to prison?!",
