@@ -1,5 +1,45 @@
 [
   {
+    "id": "altoids-mint",
+    "published" : "2021-11-",
+    "title": "Altoids Mint",
+    "youtube": "UevKllHLziE",
+    "setup": "Did you hear about the guy who invented Altoids?",
+    "punchline": "Yeah, they say he made a mint!"
+  },
+  {
+    "id": "hiding-elephants",
+    "published" : "2021-11-25",
+    "title": "Hiding Elephants",
+    "youtube": "fjlQvuWcc1U",
+    "setup": "Why don't you ever find elephants hiding in the woods!?",
+    "punchline": "Because they're really good at it!"
+  },
+  {
+    "id": "stick",
+    "published" : "2021-11-24",
+    "title": "Stick",
+    "youtube": "Qy1jY3odnYk",
+    "setup": "What's brown and sticky?!",
+    "punchline": "A...stick!"
+  },
+  {
+    "id": "cliff",
+    "published" : "2021-11-23",
+    "title": "Cliff",
+    "youtube": "JU2lAhY9wYI",
+    "setup": "What did the rock climber name his son?!",
+    "punchline": "Cliff, of course!"
+  },
+  {
+    "id": "stubbed-toe",
+    "published" : "2021-11-22",
+    "title": "Stubbed Toe",
+    "youtube": "xGGxed16QDk",
+    "setup": "Oo, stubbed your toe did ya?!",
+    "punchline": "Well, the good news is...you'll feel better when it stops hurting!"
+  },
+  {
     "id": "take-the-car",
     "published" : "2021-11-19",
     "title": "Take the car",
