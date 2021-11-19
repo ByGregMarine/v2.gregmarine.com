@@ -1,7 +1,47 @@
 [
   {
+    "id": "worse-than-diarrhea",
+    "published" : "2021-12-03",
+    "title": "Worse than Diarrhea",
+    "youtube": "2q-rBlu16pk",
+    "setup": "You know what's worse than having diarrhea?!",
+    "punchline": "Trying to spell diarrhea!!!"
+  },
+  {
+    "id": "boston-fake-noodle",
+    "published" : "2021-12-02",
+    "title": "Boston Fake Noodle",
+    "youtube": "yFaIUzODTvk",
+    "setup": "What do you call a fake noodle from Boston?!",
+    "punchline": "An Impasta!!!"
+  },
+  {
+    "id": "moon-diner",
+    "published" : "2021-12-01",
+    "title": "Moon Diner",
+    "youtube": "H9FiYdzJcB0",
+    "setup": "What did the food critic say about the new diner on the moon?",
+    "punchline": "Great food...no atmosphere!"
+  },
+  {
+    "id": "steak-pun",
+    "published" : "2021-11-30",
+    "title": "Steak Pun",
+    "youtube": "eOR9FNusSrw",
+    "setup": "A steak pun is a...",
+    "punchline": "...rare medium well done!"
+  },
+  {
+    "id": "make-me-pizza",
+    "published" : "2021-11-29",
+    "title": "Make Me Pizza",
+    "youtube": "YjcnDlTfTuo",
+    "setup": "My son says, 'Dad, can you make me a pizza?!'",
+    "punchline": "I said, 'POOF! Now you're a pizza!"
+  },
+  {
     "id": "altoids-mint",
-    "published" : "2021-11-",
+    "published" : "2021-11-26",
     "title": "Altoids Mint",
     "youtube": "UevKllHLziE",
     "setup": "Did you hear about the guy who invented Altoids?",
