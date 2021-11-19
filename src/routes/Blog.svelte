@@ -2,6 +2,7 @@
   import { afterUpdate } from 'svelte';
   import { fade } from "svelte/transition";
   import { link, navigate } from "svelte-routing";
+	import Content from "../components/Content.svelte";
   import xss from "xss";
   import { Marked } from '@ts-stack/markdown';
   import { blog } from "../stores/IndexStore";
@@ -12,6 +13,8 @@
   collection.set("Blog");
   document.set("");
   
+  let content;
+
   let docMD = "";
   const getDocument = async () => {
     const response = await fetch(`/collections/blog/${id}/document.md`);
@@ -20,6 +23,8 @@
     } else {
       const data = await response.text();
       docMD = Marked.parse(xss(data));
+
+      content.gotoStartScrollTop();
     }
   };
 
@@ -52,6 +57,8 @@
     }
 	});
 </script>
+
+<Content bind:this={content}>
 
 {#if !id}
   <div class="container mx-auto flex flex-wrap pt-4 pb-12" in:fade>
@@ -96,3 +103,5 @@
     </div>
   {/if}
 {/if}
+
+</Content>

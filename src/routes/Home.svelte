@@ -1,6 +1,7 @@
 <script lang="ts">
   import { fade } from "svelte/transition";
   import { link } from "svelte-routing";
+	import Content from "../components/Content.svelte";
   import {
     zen,
     dadJokes,
@@ -17,6 +18,8 @@
     element.scrollIntoView({ behavior: "smooth" });
   };
 </script>
+
+<Content>
 
 <!--Hero-->
 <div id="home" class="hero min-h-screen" in:fade>
@@ -319,3 +322,5 @@
     </div>
   </div>
 </section>
+
+</Content>

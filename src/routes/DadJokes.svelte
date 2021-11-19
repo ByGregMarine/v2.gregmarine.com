@@ -2,6 +2,7 @@
   import { afterUpdate } from 'svelte';
   import { fade } from "svelte/transition";
   import { link, navigate } from "svelte-routing";
+	import Content from "../components/Content.svelte";
   import { dadJokes } from "../stores/IndexStore";
   import { collection, document } from "../stores/PageStore";
 
@@ -43,6 +44,8 @@
     }
 	});
 </script>
+
+<Content>
 
 {#if !id}
   <div class="container mx-auto flex flex-wrap pt-4 pb-12" in:fade>
@@ -103,6 +106,8 @@
     </div>
   {/if}
 {/if}
+
+</Content>
 
 <style>
   .embed-container {

@@ -1,20 +1,35 @@
 <script>
-  import { afterUpdate, onMount } from "svelte";
-  import { currentScrollTop } from "../stores/ContentStore";
+  import { onMount } from "svelte";
+  import { get } from 'svelte/store';
+  import { currentScrollTop, previousScrollTop, currentPath, previousPath } from "../stores/ContentStore";
+
+  let startScrollTop = 0;
+  let content;
+
+  export const gotoStartScrollTop = () => {
+    if (content) {
+      content.scrollToPoint(0, startScrollTop, 0);
+    }
+  };
 
   const saveScrollTop = (ev) => {
     currentScrollTop.set(ev.detail.scrollTop);
   };
 
   onMount(() => {
-    console.log('onMount');
-    const content = document.querySelector('ion-content');
+    content = document.querySelector('ion-content');
     content.scrollEvents = true;
     content.addEventListener('ionScroll', saveScrollTop);
-  });
 
-  afterUpdate(() => {
-    console.log('afterUpdate');
+    if(window.location.pathname === get(previousPath)) {
+      startScrollTop = get(previousScrollTop);
+      gotoStartScrollTop();
+    }
+
+    previousScrollTop.set(get(currentScrollTop));
+
+    previousPath.set(get(currentPath));
+    currentPath.set(window.location.pathname);
   });
 </script>
 

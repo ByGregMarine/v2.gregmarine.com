@@ -2,6 +2,7 @@
   import { afterUpdate, beforeUpdate } from 'svelte';
   import { fade } from "svelte/transition";
   import { link, navigate } from "svelte-routing";
+	import Content from "../components/Content.svelte";
   import xss from "xss";
   import { Marked } from '@ts-stack/markdown';
   import { recipes } from "../stores/IndexStore";
@@ -59,6 +60,8 @@
     if(docLoaded) docLoaded = false;
   });
 </script>
+
+<Content>
 
 {#if !id}
   <div class="container mx-auto flex flex-wrap pt-4 pb-12" in:fade>
@@ -147,3 +150,5 @@
     </div>
   {/if}
 {/if}
+
+</Content>

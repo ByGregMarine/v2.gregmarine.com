@@ -2,11 +2,9 @@
   import { afterUpdate } from 'svelte';
   import { fade } from "svelte/transition";
   import { link, navigate } from "svelte-routing";
+	import Content from "../components/Content.svelte";
   import xss from "xss";
   import { Marked } from '@ts-stack/markdown';
-  import {
-    scroll,
-  } from "../stores/stores.js";
   import { zen } from "../stores/IndexStore";
   import { collection, document } from "../stores/PageStore";
 
@@ -15,24 +13,8 @@
   collection.set("Zen");
   document.set("");
 
-  const updateScroll = () => {
-    const content = window.document.querySelector('ion-content');
-    
-    if(window.location.pathname === $scroll.previousPath) {
-      if(content) {
-        //content.scrollToPoint(0, $scroll.previousTop);
-      }
-    } else {
-      if(content) {
-        //content.scrollToTop();
-      }
-    }
+  let content;
 
-    $scroll.previousTop = $scroll.currentTop;
-    $scroll.previousPath = $scroll.currentPath;
-    $scroll.currentPath = window.location.pathname;
-  }
-  
   let docMD = "";
   const getDocMD = async () => {
     const response = await fetch(`/collections/zen/${id}/document.md`);
@@ -41,7 +23,8 @@
     } else {
       const data = await response.text();
       docMD = Marked.parse(xss(data));
-      updateScroll();
+
+      content.gotoStartScrollTop();
     }
   };
 
@@ -69,13 +52,13 @@
       } else {
         document.set("");
         doc = null;
-
-        updateScroll();
       }
       docLoaded = true;
     }
 	});
 </script>
+
+<Content bind:this={content}>
 
 {#if !id}
   <div class="container mx-auto flex flex-wrap pt-4 pb-12" in:fade>
@@ -124,3 +107,5 @@
     </div>
   {/if}
 {/if}
+
+</Content>
