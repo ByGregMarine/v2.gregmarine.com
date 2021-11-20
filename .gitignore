@@ -1,6 +1,5 @@
 /node_modules/
 /public/build/
 /.presite
-/dist
 
 .DS_Store
