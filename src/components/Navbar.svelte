@@ -10,7 +10,7 @@
     }
   };
 
-  type MenuItem = {
+  interface MenuItem {
     title: string;
     href: string;
   };
