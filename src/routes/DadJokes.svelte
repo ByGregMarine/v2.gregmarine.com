@@ -71,11 +71,11 @@
               {doc.punchline}
             </p>
             <div class="card-actions">
-              <a class="btn btn-primary" href="/dad-jokes/{doc.id}" use:link>Watch Video</a>
+              <a class="btn btn-primary" href="dad-jokes/{doc.id}" use:link>Watch Video</a>
             </div>
           </div>
           <figure class="m-0">
-            <img alt={doc.title} src="/collections/dad-jokes/image-01.webp" />
+            <img alt={doc.title} src="collections/dad-jokes/image-01.webp" />
           </figure>
         </div>
       </div>

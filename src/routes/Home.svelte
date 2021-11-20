@@ -27,7 +27,7 @@
     <img
       alt="Greg Marine headshot"
       class="max-w-sm mask mask-squircle"
-      src="/profile.webp"
+      src="profile.webp"
     />
     <div>
       <h1 class="mb-5 text-5xl font-bold">Hello there! I'm Greg!</h1>
@@ -66,7 +66,7 @@
         <img
           alt="Desktop Zen Garden with mini Torii Gate"
           class="max-w-sm mask mask-decagon"
-          src="/collections/zen/image-01.webp"
+          src="collections/zen/image-01.webp"
         />
         <div>
           <h3 class="mb-5 text-3xl font-bold">The Path to Balance</h3>
@@ -85,7 +85,7 @@
         <img
           alt="Desktop Zen Garden with mini tree"
           class="max-w-sm mask mask-circle"
-          src="/collections/zen/image-02.webp"
+          src="collections/zen/image-02.webp"
         />
         <div>
           <h3 class="mb-5 text-3xl font-bold">Connect with the Moment</h3>
@@ -123,7 +123,7 @@
             <figure class="m-0">
               <img
                 alt={doc.title}
-                src="/collections/zen/{doc.id}/image.webp"
+                src="collections/zen/{doc.id}/image.webp"
               />
             </figure>
           </div>
@@ -144,7 +144,7 @@
 <!--Dad Jokes-->
 <section id="dad-jokes" class="py-8" in:fade>
   <div class="container max-w-5xl mx-auto m-8">
-    <a href="/dad-jokes" class="w-full no-underline hover:no-underline" use:link>
+    <a href="dad-jokes" class="w-full no-underline hover:no-underline" use:link>
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center">
         Dad Jokes
       </h1>
@@ -161,7 +161,7 @@
         <img
           alt="Father and son holding hands looking at a sunset"
           class="max-w-sm mask mask-hexagon-2"
-          src="/collections/dad-jokes/image-01.webp"
+          src="collections/dad-jokes/image-01.webp"
         />
         <div>
           <h3 class="mb-5 text-3xl font-bold">Like Father Like Son</h3>
@@ -180,7 +180,7 @@
         <img
           alt="My son, Malachi Marine"
           class="max-w-sm mask mask-heart"
-          src="/collections/dad-jokes/image-02.webp"
+          src="collections/dad-jokes/image-02.webp"
         />
         <div>
           <h3 class="mb-5 text-3xl font-bold">Proud to be a Dad</h3>
@@ -214,20 +214,20 @@
                 {doc.punchline}
               </p>
               <div class="card-actions">
-                <a class="btn btn-primary" href="/dad-jokes/{doc.id}" use:link
+                <a class="btn btn-primary" href="dad-jokes/{doc.id}" use:link
                   >Watch Video</a
                 >
               </div>
             </div>
             <figure class="m-0">
-              <img alt={doc.title} src="/collections/dad-jokes/image-01.webp" />
+              <img alt={doc.title} src="collections/dad-jokes/image-01.webp" />
             </figure>
           </div>
         </div>
       {/each}
 
       <div class="flex md:w-1/2 lg:w-1/3 p-2">
-        <a class="btn btn-primary" href="/dad-jokes" use:link>
+        <a class="btn btn-primary" href="dad-jokes" use:link>
           More Eye Rolls
         </a>
       </div>
@@ -240,7 +240,7 @@
 <!--Blog-->
 <section id="blog" class="py-8" in:fade>
   <div class="container max-w-5xl mx-auto m-8">
-    <a href="/blog" class="w-full no-underline hover:no-underline" use:link>
+    <a href="blog" class="w-full no-underline hover:no-underline" use:link>
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center">
         Blog
       </h1>
@@ -257,13 +257,13 @@
         <div class="flex md:w-1/2 lg:w-1/3 p-2">
           <div class="card bordered shadow-lg">
             <figure class="m-0 px-10 pt-10">
-              <img class="object-cover h-96 md:h-48 w-full rounded-lg" alt={doc.title} src="/collections/blog/{doc.id}/image.webp" />
+              <img class="object-cover h-96 md:h-48 w-full rounded-lg" alt={doc.title} src="collections/blog/{doc.id}/image.webp" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">{doc.title}</h2>
               <p class="sm:text-sm md:text-xs">{doc.text}</p>
               <div class="card-actions">
-                <a class="btn btn-primary" href="/blog/{doc.id}" use:link>Read More</a>
+                <a class="btn btn-primary" href="blog/{doc.id}" use:link>Read More</a>
               </div>
             </div>
           </div>
@@ -271,7 +271,7 @@
       {/each}
 
       <div class="flex md:w-1/2 lg:w-1/3 p-2">
-        <a class="btn btn-primary" href="/blog" use:link>
+        <a class="btn btn-primary" href="blog" use:link>
           More Musings
         </a>
       </div>
@@ -284,7 +284,7 @@
 <!--Recipes-->
 <section id="recipes" class="py-8" in:fade>
   <div class="container max-w-5xl mx-auto m-8">
-    <a href="/recipes" class="w-full no-underline hover:no-underline" use:link>
+    <a href="recipes" class="w-full no-underline hover:no-underline" use:link>
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center">
         Recipes
       </h1>
@@ -301,13 +301,13 @@
         <div class="flex md:w-1/2 lg:w-1/3 p-2">
           <div class="card bordered shadow-lg">
             <figure class="m-0 px-10 pt-10">
-              <img class="object-cover h-96 md:h-48 w-full rounded-lg" alt={doc.title} src="/collections/recipes/{doc.id}/image.webp" />
+              <img class="object-cover h-96 md:h-48 w-full rounded-lg" alt={doc.title} src="collections/recipes/{doc.id}/image.webp" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">{doc.title}</h2>
               <p class="sm:text-sm md:text-xs">{doc.text}</p>
               <div class="card-actions">
-                <a class="btn btn-primary" href="/recipes/{doc.id}" use:link>Show Recipe</a>
+                <a class="btn btn-primary" href="recipes/{doc.id}" use:link>Show Recipe</a>
               </div>
             </div>
           </div>
@@ -315,7 +315,7 @@
       {/each}
 
       <div class="flex md:w-1/2 lg:w-1/3 p-2">
-        <a class="btn btn-primary" href="/recipes" use:link>
+        <a class="btn btn-primary" href="recipes" use:link>
           More Yum
         </a>
       </div>

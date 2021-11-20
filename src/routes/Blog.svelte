@@ -76,13 +76,13 @@
       <div class="flex md:w-1/2 lg:w-1/3 xl:w-1/4 p-2" in:fade>
         <div class="card bordered shadow-lg">
           <figure class="m-0 px-10 pt-10">
-            <img class="object-cover h-96 md:h-48 w-full rounded-lg" alt={doc.title} src="/collections/blog/{doc.id}/image.webp" />
+            <img class="object-cover h-96 md:h-48 w-full rounded-lg" alt={doc.title} src="collections/blog/{doc.id}/image.webp" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">{doc.title}</h2>
             <p class="sm:text-sm md:text-xs">{doc.text}</p>
             <div class="card-actions">
-              <a class="btn btn-primary" href="/blog/{doc.id}" use:link>Read More</a>
+              <a class="btn btn-primary" href="blog/{doc.id}" use:link>Read More</a>
             </div>
           </div>
         </div>

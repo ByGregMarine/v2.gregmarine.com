@@ -79,11 +79,11 @@
             <h2 class="card-title">{doc.title}</h2>
             <p>{doc.text}</p>
             <div class="card-actions">
-              <a class="btn btn-primary" href="/zen/{doc.id}" use:link>Read More</a>
+              <a class="btn btn-primary" href="zen/{doc.id}" use:link>Read More</a>
             </div>
           </div>
           <figure class="m-0">
-            <img alt={doc.title} src="/collections/zen/{doc.id}/image.webp" />
+            <img alt={doc.title} src="collections/zen/{doc.id}/image.webp" />
           </figure>
         </div>
       </div>
@@ -94,7 +94,7 @@
     <div class="container mx-auto w-full flex flex-col items-center pt-4 pb-12" in:fade>
       <div class="flex-1 card lg:card-side lg:h-64 md:w-2/3 xl:w-3/4">
         <figure>
-          <img class="h-full" alt={doc.title} src="/collections/zen/{doc.id}/image.webp" />
+          <img class="h-full" alt={doc.title} src="collections/zen/{doc.id}/image.webp" />
         </figure> 
         <div class="card-body">
           <p class="italic">{doc.text}</p>

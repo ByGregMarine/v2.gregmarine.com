@@ -79,13 +79,13 @@
       <div class="flex md:w-1/2 lg:w-1/3 xl:w-1/4 p-2" in:fade>
         <div class="card bordered shadow-lg">
           <figure class="m-0 px-10 pt-10">
-            <img class="object-cover h-96 md:h-48 w-full rounded-lg" alt={doc.title} src="/collections/recipes/{doc.id}/image.webp" />
+            <img class="object-cover h-96 md:h-48 w-full rounded-lg" alt={doc.title} src="collections/recipes/{doc.id}/image.webp" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">{doc.title}</h2>
             <p class="sm:text-sm md:text-xs">{doc.text}</p>
             <div class="card-actions">
-              <a class="btn btn-primary" href="/recipes/{doc.id}" use:link>Show Recipe</a>
+              <a class="btn btn-primary" href="recipes/{doc.id}" use:link>Show Recipe</a>
             </div>
           </div>
         </div>
@@ -98,24 +98,24 @@
       <div class="flex flex-wrap w-full xl:w-1/2 md:w-4/6 sm:w-5/6" in:fade>
         <div class="tabs w-full">
           <a
-            href="/recipes/{doc.id}/overview"
+            href="recipes/{doc.id}/overview"
             class="tab tab-lifted {tab === 'overview' ? 'tab-active' : ''}"
             use:link>Overview</a
           >
           <a
-            href="/recipes/{doc.id}/ingredients"
+            href="recipes/{doc.id}/ingredients"
             class="tab tab-lifted {tab === 'ingredients' ? 'tab-active' : ''}"
             use:link>Ingredients</a
           >
           <a
-            href="/recipes/{doc.id}/instructions"
+            href="recipes/{doc.id}/instructions"
             class="tab tab-lifted {tab === 'instructions'
               ? 'tab-active'
               : ''}"
             use:link>Instructions</a
           >
           <a
-            href="/recipes/{doc.id}/notes"
+            href="recipes/{doc.id}/notes"
             class="tab tab-lifted {tab === 'notes' ? 'tab-active' : ''}"
             use:link>Notes</a
           >
@@ -136,7 +136,7 @@
               <div class="w-full sm:w-1/2 p-6">
                 <img
                   alt={doc.title}
-                  src="/collections/recipes/{doc.id}/image.webp"
+                  src="collections/recipes/{doc.id}/image.webp"
                 />
               </div>
             </div>
