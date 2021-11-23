@@ -3,7 +3,8 @@
   "version": "2.1.0",
   "private": true,
   "scripts": {
-    "build": "rollup -c & presite public -o dist",
+    "build": "rollup -c",
+    "presite": "presite public -o dist",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear -s --port 3000",
     "check": "svelte-check --tsconfig ./tsconfig.json"

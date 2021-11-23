@@ -1,5 +1,45 @@
 [
   {
+    "id": "mugged-coffee",
+    "published" : "2021-12-10",
+    "title": "Mugged Coffee",
+    "youtube": "9kWsRB3sSzg",
+    "setup": "What did the coffee say when it got to the police station?",
+    "punchline": "Help! I've been mugged!!!"
+  },
+  {
+    "id": "paper-joke",
+    "published" : "2021-12-09",
+    "title": "Paper Joke",
+    "youtube": "vSriJbwoeMY",
+    "setup": "Want to hear a joke about paper?",
+    "punchline": "Never mind, it's a tearable joke!"
+  },
+  {
+    "id": "apples-on-a-tree",
+    "published" : "2021-12-08",
+    "title": "Apples on a Tree",
+    "youtube": "-LLKSIXL7qw",
+    "setup": "How many apples grow on a tree?",
+    "punchline": "All of them, of course!"
+  },
+  {
+    "id": "ihop-pirates",
+    "published" : "2021-12-07",
+    "title": "IHOP Pirates",
+    "youtube": "qcalImLXJO4",
+    "setup": "Where did the peg-legged pirate go for breakfast?",
+    "punchline": "IHOP, ye mattie!"
+  },
+  {
+    "id": "weight-finds-me",
+    "published" : "2021-12-06",
+    "title": "Weight Finds Me",
+    "youtube": "9qM8pdXgCu8",
+    "setup": "I keep trying to lose weight...",
+    "punchline": "...but it keeps finding me!"
+  },
+  {
     "id": "worse-than-diarrhea",
     "published" : "2021-12-03",
     "title": "Worse than Diarrhea",
