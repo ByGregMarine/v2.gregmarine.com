@@ -1,5 +1,29 @@
 [
   {
+    "id": "scarecrow-of-the-year",
+    "published" : "2021-12-22",
+    "title": "Scarecrow of the Year",
+    "youtube": "Qh-78I3RpX4",
+    "setup": "Why did the scarecrow win the Scarecrow of the Year Award?",
+    "punchline": "Because he was 'outstanding' in his field!!!"
+  },
+  {
+    "id": "haircut",
+    "published" : "2021-12-21",
+    "title": "Haircut",
+    "youtube": "MoHWWPYroes",
+    "setup": "So my son asks, 'Dad, did you get a haircut?'",
+    "punchline": "No, son, I got ALL my hairs cut!"
+  },
+  {
+    "id": "snowman-smells-carrots",
+    "published" : "2021-12-20",
+    "title": "Snowman Smells Carrots",
+    "youtube": "mE-_I6fxVI8",
+    "setup": "What did one snowman say to the other?",
+    "punchline": "Do you smell carrots?!?"
+  },
+  {
     "id": "mugged-coffee",
     "published" : "2021-12-10",
     "title": "Mugged Coffee",
