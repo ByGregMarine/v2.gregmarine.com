@@ -1,5 +1,21 @@
 [
   {
+    "id": "tissue-dance",
+    "published" : "2021-12-27",
+    "title": "Tissue Dance",
+    "youtube": "07qZmT78wOg",
+    "setup": "How do you make a tissue dance?!",
+    "punchline": "You put a little boogie in it!"
+  },
+  {
+    "id": "no-body",
+    "published" : "2021-12-23",
+    "title": "No Body",
+    "youtube": "lvU8tpXsAho",
+    "setup": "Why don't skeletons ever go to the movies?",
+    "punchline": "Because they have no body to go with!!!"
+  },
+  {
     "id": "scarecrow-of-the-year",
     "published" : "2021-12-22",
     "title": "Scarecrow of the Year",
