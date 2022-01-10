@@ -1,5 +1,21 @@
 [
   {
+    "id": "camo",
+    "published" : "2022-01-10",
+    "title": "Camo",
+    "youtube": "QQ4vGcXJpis",
+    "setup": "I went to buy some camouflage gear the other day.",
+    "punchline": "I wasn't able to see any!"
+  },
+  {
+    "id": "made-from-concentrate",
+    "published" : "2021-12-28",
+    "title": "Made from Concentrate",
+    "youtube": "fJI195GLbpU",
+    "setup": "Why am I staring at this orange juice carton so intently?!",
+    "punchline": "Well, it says 'Made from Concentrate'!"
+  },
+  {
     "id": "tissue-dance",
     "published" : "2021-12-27",
     "title": "Tissue Dance",
