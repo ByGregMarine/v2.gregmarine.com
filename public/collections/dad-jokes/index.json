@@ -1,5 +1,45 @@
 [
   {
+    "id": "revolting-troops",
+    "published" : "2022-01-21",
+    "title": "Revolting Troops",
+    "youtube": "b1oJF2c59U8",
+    "setup": "So the private says, 'Sergeant, the troops are revolting!'",
+    "punchline": "The sergeant replied, 'You don't smell great yourself!!!'"
+  },
+  {
+    "id": "belt-zero",
+    "published" : "2022-01-20",
+    "title": "Belt Zero",
+    "youtube": "LqvFeOwcesk",
+    "setup": "What's the difference between 0 and 8?!?",
+    "punchline": "A belt!!!"
+  },
+  {
+    "id": "three-movies",
+    "published" : "2022-01-19",
+    "title": "Three Movies",
+    "youtube": "14MPILQgW9M",
+    "setup": "Yesterday, my friend and I watched 3 movies back to back.",
+    "punchline": "Luckily, I was the one...facing the TV!!!"
+  },
+  {
+    "id": "father-spider",
+    "published" : "2022-01-18",
+    "title": "Father Spider",
+    "youtube": "SbgT4Trji-w",
+    "setup": "What did the father spider say to the teen spider?",
+    "punchline": "You spend way too much time on the web!!!"
+  },
+  {
+    "id": "shark-vs-octopus",
+    "published" : "2022-01-17",
+    "title": "Shark vs. Octopus",
+    "youtube": "PYvdFdzTX-Y",
+    "setup": "Who would win a fight between a shark and an octopus?",
+    "punchline": "The octopus, of course! He's well armed!!!"
+  },
+  {
     "id": "blue-ship-red-sea",
     "published" : "2022-01-14",
     "title": "Blue Ship, Red Sea",
