@@ -1,5 +1,45 @@
 [
   {
+    "id": "cow-spells",
+    "published" : "2022-01-28",
+    "title": "Cow Spells",
+    "youtube": "KatKvPiWGfc",
+    "setup": "What kind of spells do cows cast?",
+    "punchline": "Moodoo!"
+  },
+  {
+    "id": "cellophane",
+    "published" : "2022-01-27",
+    "title": "Cellophane",
+    "youtube": "eC9Q01VoK-w",
+    "setup": "I'm really into the band, Cellophane.",
+    "punchline": "They're a...WRAP group!"
+  },
+  {
+    "id": "orca-stra",
+    "published" : "2022-01-26",
+    "title": "Orca-stra",
+    "youtube": "R8G3EiXDv34",
+    "setup": "What do you call a group of killer whales playing instruments?",
+    "punchline": "An ORCA-STRA!"
+  },
+  {
+    "id": "scuba-divers",
+    "published" : "2022-01-25",
+    "title": "Scuba Divers",
+    "youtube": "_hCzjIOFr6U",
+    "setup": "Why do scuba divers fall backwards into the water?",
+    "punchline": "If they fell forwards, they'd still be in the boat!"
+  },
+  {
+    "id": "thick-skin",
+    "published" : "2022-01-24",
+    "title": "Thick Skin",
+    "youtube": "kvBvn29vk98",
+    "setup": "Why are walruses never offended?",
+    "punchline": "They have...thick skin!"
+  },
+  {
     "id": "revolting-troops",
     "published" : "2022-01-21",
     "title": "Revolting Troops",
